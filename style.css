@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  
+  }
+  
+  body{
+    padding: 20px;
+    background: rgb(29, 28, 29);
+    
+  }
+
+.nav-bar{
+    background: cadetblue;
+    color: brown;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 20px;
+    opacity: 75%;
+    
+    
+}
+
+.nav-bar-list{
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    }
+
+
+
+.heroclass{ 
+    color: brown;
+    padding-left: 30vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.heroclass img {
+
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+   
+}
