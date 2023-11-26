@@ -1,55 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: poppins, sans-serif;
+
+}
+
+body{
+
+  width: 100%;
+  height: 100vh;
+  background: rgb(29, 28, 29);
+  
+}
+
+/* HEADER */
+.navbar{
+  width: 100%;
+  padding: 4rem 4rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background: rgb(19, 18, 18);
+  opacity: 85%;
+}
+
+.navbar-img{
+  display: flex;
+  width: 130px;
+  cursor: pointer;
+}
+
+.navbar h2{
+  color:white;
+}
+
+ul{
+  display: flex;
+ 
+}
+
+li{
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  padding: 5px 2rem;
+  margin: 0 10px;
+  color:#ecdd00d7;
+  position: relative;
+
+}
+
+ul li a::before {
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ecdd00d7;
+  border-right: 2px solid #ecdd00d7;
+  transition: all .4s;
+
+}
+
+ul li a::after {
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ecdd00d7;
+  border-right: 2px solid #ecdd00d7;
+  transition: all .4s;
+
+}
+
+ul li a:hover::after, ul li a:hover::before{
+  content: '';
+  width: 30%;
+  height: 30%;
+  transform: rotate(180deg);
+  
   
   }
+/* MENU TOOGLE */
+
+#menu-toggle,
+.menu-label{
+  display: none;
+}
+
+
+/* FIN MENU TOOGLE */
+
+ /* FIN DEL HEADER */
+
+ /* HERO */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  gap: 130px;
+}
+
+ .conteiner-hero{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  gap: 300px;
+  color: #f3f3f3d7;
+
+ }
+
+ span{
+  font-family: 'Anton', sans-serif;
+  font: 400;
+  font-size: 82px;
+  background: linear-gradient( #fff23aea 5%, #d36a15b7);
+  color:transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+ }
+
+ /* FIN DEL HERO */
+ 
+ /*  LOGIN */
+
+ #inicio-Secion{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 120px;
+}
+
+.conteiner-login{
+  font-size: 40px;
+  font-weight: 400;
+  color: #ecc800;
+ }
+
+button{
+  font-family: 'Anton', sans-serif;
+  height: 50px;
+  width: 150px;
+  background: linear-gradient(#ecdd00d7 2%, #d36b15);
+  color: black;
+}
+
+.image-login{
+  height: 300px;
+}
+
+ /* FIN LOGIN */
+
+ /* INICIO DE CATEGORIAS */
+
+
+#categorias{
+  display: inline-block;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.subtitle {
+  font-size: 30px;
+  background: linear-gradient( #fff23aea 5%, #d36a15b7);
+  color:transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0.9;
+  margin-bottom: 20px;}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.span2{
+ font-size: 20px;
+}
+
+
+ .hero_recomendados {
+  font-size: 15px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+
+}
+.hero_recomendados_card_container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 50px;
+ justify-content: center;
+}
+.hero_recomendados_card {
+  width: 420px;
+  height: 130px;
+  padding:10px;
+  background-color: rgb(80, 80, 80);
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero_recomendados_card img {
+  width: 120px;
+  height: 100px;
+}
+
+.hero_recomendados_info {
+  color:#FFFFFF;
+  font-size: 16px;
+}
+
+.hero_recomendados_card button {
+  background: linear-gradient( #fff23aea 5%, #d36a15b7);
+  border: none;
+  border-radius: 17.5px;
+  color: #000000;
+  cursor: pointer;
+  height: 20px;
+}
+
+.hero_recomendados_info p {
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+ /* FIN DE CATEGORIAS  */
+
+
+#Productos{
+display: inline-block;
+flex-wrap: wrap;
+gap: 50px;
+
+}
+
+ .Productos_card1{
+  width: 230px;
+  height: 250px;
+  padding:20px;
+  background-color: rgb(80, 80, 80);
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+ }
+
+ .Productos_card1 img {
+  width: 100px;
+  height: 100px;
+}
+.boton1{
+  font-family: 'Anton', sans-serif;
+  height: 38px;
+  width: 80px;
+  border-radius: 15px;
+  background: linear-gradient(#ecdd00d7 2%, #d36b15);
+  color: black;
+  cursor: pointer;
+}
+.boton1:hover{
+  box-shadow: 3px 2px 10px black;
+}
+
+.boton:hover{
+  padding: 14px;
+  box-shadow: 3px 2px 10px black;
+ 
+}
+
+
+
+
+.producto_recomendados_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#FFFFFF;
+  font-size: 16px;
+}
+
+
+
+/* REGISTRO */
+
+.boxbox{
+  width: 320px;
+height: 450px;
+padding: 20px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: rgba(116, 116, 116, 0.404);
+border: 2px solid #ffbc03d7;
+gap: 20px;
+border-radius: 10px;
+
+}
+
+.conteiner-login div button a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Anton', sans-serif;
+}
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+ 
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #ecdd00d7;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  -webkit-transform: translateY(-50%) scale(.9);
+      -ms-transform: translateY(-50%) scale(.9);
+          transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  border-radius: 50px;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ecdd00d7;
   
-  body{
-    padding: 20px;
-    background: rgb(29, 28, 29);
-    
-  }
-
-.nav-bar{
-    background: cadetblue;
-    color: brown;
-    display: flex;
-    border-radius: 30px;
-    justify-content: center;
-    padding: 20px;
-    opacity: 75%;
-    
-    
 }
 
-.nav-bar-list{
-    display: flex;
-    gap: 30px;
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(0, 0, 0);
+
 }
 
-a{
-    list-style: none;
-    text-decoration: none;
-    }
-
-
-
-.heroclass{ 
-    color: brown;
-    padding-left: 30vh;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 60px;
+.buttonBr{
+padding-top: 20px;
 }
 
-.heroclass img {
-
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-   
+.buttonR{
+  font-family: 'Anton', sans-serif;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #ecdd00d7;
+  color: black;
+  border: 0px solid
 }
+
+
+/* FIN REGISTRO */
+
+/* INICIO DE SESION */
+.boxbox2{
+  width: 320px;
+height: 300px;
+padding: 50px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: rgba(116, 116, 116, 0.404);
+border: 2px solid #ecdd00d7;
+gap: 20px;
+border-radius: 10px;
+
+}
+
+
+/* FIN D INICIO DE SESION */
+
+/* FOOTER */
+footer{
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 70px;
+
+}
+
+
+footer a,
+footer p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+
+
+
+.footer-link {
+  display:flex;
+  justify-content:space-between;
+  gap: 20px;
+  
+
+}
+
+.footer-final div{
+  font-size:17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+  width:480px;
+  background:  rgb(20, 20, 20);
+  opacity: 2px;
+  border-radius: 25px;
+  gap: 20px;
+
+}
+
+.conteiner-foo{display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width:380px;
+  background: rgb(20, 20, 20);
+  opacity: 2px;
+  border-radius: 25px;
+}
+
+.conteiner-foo p span{
+  font-family: 'Anton', sans-serif;
+  font: 400;
+  font-size: 12px;
+  background-color: aliceblue;
+}
+/* FIN FOOTER */

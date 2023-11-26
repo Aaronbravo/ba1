@@ -2,37 +2,210 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Projecto 1</title>
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <title>DU repuestos</title>
 </head>
-<body>  
+<body>
     <header>
-        <nav class="nav-bar">
-            <img src="" alt="">
-            <ul class="nav-bar-list">
-                <li><a href="">Categorias</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="" target="_blank">Contacto</a></li>
+        <nav class="navbar">
+            <img class="navbar-img" src="./assets/DURESPUESTOS-PNG.png" alt="">
+            
+              
+           
+              <label for="menu-toggle" class="menu-label"> <img src="./assets/menu.png" alt=""> 
+              </label>
+              <input id="menu-toggle" type="checkbox">
+          
+            <ul class="navbar-list"> <li><a href="#hero">Inicio</a></li>
+                <li><a  href="#productos">Catalogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <img src="" alt="">
-        </nav>
-    </header>
+            <ul>
+                <li><a target="_blank" href="./login.html">Login</a>
+               
+                </li>
+           </ul>
+         
+          </nav>     
+    </header>   
+    
+    
+        <main>
+             <section id="hero" >
+                <div class="conteiner-hero">
+                    <div><img class="image-login" src="./assets/DURESPUESTOS-PNG.png" alt=""></div>
+                   
+                    <div class="hero-text"><span>D&U Repuestos y Servicios.</span><div>Nuestra empresa de venta de repuestos de camiones es una tienda especializada en la venta de piezas y accesorios de alta calidad para camiones de diferentes marcas y modelos. Ofrecemos una amplia gama de productos, desde piezas de motor y transmisión hasta accesorios y equipos para camiones.
+                    </div></div>
+                </div>
 
-    <main>
-            <section class="heroclass">
-                
-                    <img src="./DURESPUESTOS-PNG.png" alt="logo de DUREPUESTOS">
-                    <div><h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam tempore illo placeat iusto eum repudiandae nisi id. Nulla odio saepe molestias beatae praesentium aperiam, labore debitis ab adipisci officiis placeat!</h1></div>
-                
-            </section>
 
-    </main>
-
-    <footer>
-
-    </footer>
+             </section>
 
 
+             <section id="categorias">   
+                <h3 class="subtitle">Lo mas buscado!</h3>
+                <article class="hero_recomendados">
+                  <div class="hero_recomendados_card_container">
+                    <div class="hero_recomendados_card">
+                      <img src="./assets/Placa-antidezlisante.png" alt="" />
+                      <div class="hero_recomendados_info">
+                        <h3>Placa autolubricante </h3>
+                        <p>La mejor proteccion</p>
+                        <span class="span2">$ 3650</span>
+                      </div>
+                      <button class="boton">Agregar</button>
+                    </div>
+                  </div>
+                  <div class="hero_recomendados_card_container">
+                    <div class="hero_recomendados_card">
+                      <img src="./assets/FAROS-TRASEROS.png" alt="" />
+                      <div class="hero_recomendados_info">
+                        <h3>Faros Traseros</h3>
+                        <p>todas las marcas</p>
+                        <span class="span2">$ 870</span>
+                      </div>
+                      <button class="boton">Agregar</button>
+                    </div>
+                  </div>
+                  <div class="hero_recomendados_card_container">
+                    
+                </article>
+
+
+             </section>
+
+
+            <section id="productos">   
+                <h3 class="subtitle">Productos!</h3>
+                <article class="hero_recomendados">
+                  <div class="hero_recomendados_card_container">
+                  <div >
+                    <div class="Productos_card1">
+                      <img src="./assets/Placa-antidezlisante.png" alt="" />
+                      <div class="producto_recomendados_info">
+                        <h3>Placa autolubricante </h3>
+                        <p>La mejor proteccion</p>
+                      </div>
+                      <button class="boton1">Ver mas</button>
+                    </div>
+                  </div>
+                  <div >
+                    <div class="Productos_card1">
+                      <img src="./assets/FAROS-TRASEROS.png" alt="" />
+                      <div class="producto_recomendados_info">
+                        <h3>Faros Traseros</h3>
+                        <p>todas las marcas</p>
+                        
+                      </div>
+                      <button class="boton1">Ver mas</button>
+                    </div>
+                  </div>
+                 
+                  
+                    <div >
+                      <div class="Productos_card1">
+                        <img src="./assets/FAJA-GANCHO-GARFIO.png" alt="" />
+                        <div class="producto_recomendados_info">
+                          <h3>Faja gancho grifo</h3>
+                          
+                        </div>
+                        <button class="boton1">Ver mas</button>
+                      </div>
+                    </div>
+                   
+
+                      <div >
+                        <div class="Productos_card1">
+                          <img src="./assets/GUARDA-BARROS-CAMIONES.png" alt="" />
+                          <div class="producto_recomendados_info">
+                            <h3>Guarda barros</h3>
+                            
+                            
+                          </div>
+                          <button class="boton1">Ver mas</button>
+                        </div>
+                      </div>
+                     
+
+                     
+                      <div >
+                        <div class="Productos_card1">
+                          <img src="./assets/lanza.png" alt="" />
+                          <div class="producto_recomendados_info">
+                            <h3>Ojal de lanza </h3>
+                            
+                          
+                          </div>
+                          <button class="boton1">Ver mas</button>
+                        </div>
+                      </div>
+                      <div >
+                        <div class="Productos_card1">
+                          <img src="./assets/FUELLE-PULMON.png" alt="" />
+                          <div class="producto_recomendados_info">
+                            <h3>Fuelle pulmon</h3>
+                           
+                            
+                          </div>
+                          <button class="boton1">Ver mas</button>
+                        </div>
+                      </div>
+                     
+                      
+                        <div >
+                          <div class="Productos_card1">
+                            <img src="./assets/LUZ-LATERAL.png" alt="" />
+                            <div class="producto_recomendados_info">
+                              <h3>Faro Lateral</h3>
+                              
+                              
+                            </div>
+                            <button class="boton1">Ver mas</button>
+                          </div>
+                        </div>
+                       
+    
+                          <div >
+                            <div class="Productos_card1">
+                              <img src="./assets/PATA-DE-APOLLO.png" alt="" />
+                              <div class="producto_recomendados_info">
+                                <h3>Pata de apollo</h3>
+                                
+                                
+                              </div>
+                              <button class="boton1">Ver mas</button>
+                            </div>
+                          </div>
+                         </div>
+
+                  
+                    
+                </article>
+
+
+             </section>
+
+        </main>
+
+
+        <footer>
+          <section id="contacto" class="footer-final">
+              <div>Contacto:  📲  <a href="1164196322">1164196322</a>  </div>
+              <div>Facebook: <a href="https://www.facebook.com/people/DU-Repuestos-y-Servicios/100063861053294/?paipv=0&eav=AfZTc9w9uYmJpTgzcmW-9MGPkb1rpGkg5oIUSmSvxnVq0_ZGm2_GRDOv2fa66rwC6gY&_rdr" >Facebook</a> </div>
+              <div>direccion: Pedro lacoste 475  </div>
+              <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6542.922845289979!2d-58.955304379816674!3d-34.919962995569946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcf0eb7b9a520f%3A0x29c008c18b855e23!2sGral.%20Las%20Heras%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678827216421!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </section>
+    <div>
+
+            <div class="conteiner-foo">
+            <p>Realizado con ❤️ por <span class="span3"> Aaron Bravo </span> </p>
+          </div>
+    </div>
+
+</footer>
 </body>
 </html>
